@@ -24,4 +24,17 @@ A simple API built with Node.js, Express, and MongoDB to manage students, course
  "address": "123 Street, City"
 }
 
+### Create a Student
+
+- **Endpoint:** `POST /students`
+- **Request Body:**
+```json
+{
+ "name": "John Doe",
+ "email": "johndoe@example.com",
+ "course": "Computer Science",
+ "mobileNumber": "1234567890",
+ "address": "123 Street, City"
+}
+
 
