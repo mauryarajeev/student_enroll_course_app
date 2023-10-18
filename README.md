@@ -35,21 +35,6 @@ A simple API built with Node.js, Express, and MongoDB to manage students, course
 }
 ```
 
-### Create a Student
-
-- **Endpoint:** `POST /students`
-- **Request Body:**
-```json
-{
- "name": "John Doe",
- "email": "johndoe@example.com",
- "course": "Computer Science",
- "mobileNumber": "1234567890",
- "address": "123 Street, City"
-}
-```
-
-
 ### Get All student
 
 - **Endpoint:** `GET /students`
@@ -223,74 +208,83 @@ A simple API built with Node.js, Express, and MongoDB to manage students, course
 ]
 ```
 
-### Create a Student
+### Get a Specific Student
 
-- **Endpoint:** `POST /students`
+- **Endpoint:** `GET /students/id`
+- **Responce Body:**
+```json
+{
+	"_id": "652fc1abe2603ab2302ef11c",
+	"name": "John Doe",
+	"email": "johndoe@example.com",
+	"course": "Computer Science",
+	"mobileNumber": "1234567890",
+	"address": "123 Street, City",
+	"__v": 0
+}
+```
+
+### Update a Student
+
+- **Endpoint:** `PATCH /students`
 - **Request Body:**
 ```json
 {
- "name": "John Doe",
- "email": "johndoe@example.com",
- "course": "Computer Science",
- "mobileNumber": "1234567890",
- "address": "123 Street, City"
+  "name": "Rajeev kumar maurya",
+  "email": "kumar@example.com",
+  "course": "Computer Science and datascrience engineering",
+  "mobileNumber": "1234567890",
+  "address": "vellore"
 }
+```
+- **Responce Body:**
+```json
+{
+	"_id": "652fc7b0e2603ab2302ef120",
+	"name": "Rajeev kumar maurya",
+	"email": "kumar@example.com",
+	"course": "Computer Science and datascrience engineering",
+	"mobileNumber": "1234567890",
+	"address": "vellore",
+	"__v": 0
+}
+```
+
+### Enroll  a Student
+
+- **Endpoint:** `POST /enrollments`
+- **Request Body:**
+```json
+{
+  "studentId": "652fc816e2603ab2302ef122",
+  "courseId": "652fcb28e2603ab2302ef140"
+}
+```
+
+### Get Enroll Student with course
+
+- **Endpoint:** `POST /enrollments/course/`
+- **Responce Body:**
+```json
+[
+	{
+		"_id": "652fc816e2603ab2302ef122",
+		"name": "joe root",
+		"email": "root@example.com",
+		"course": "mathmatics and datascience",
+		"mobileNumber": "1454545599",
+		"address": "wall street usa",
+		"__v": 0
+	}
+]
 ```
 
 ### Create a Student
 
-- **Endpoint:** `POST /students`
-- **Request Body:**
-```json
-{
- "name": "John Doe",
- "email": "johndoe@example.com",
- "course": "Computer Science",
- "mobileNumber": "1234567890",
- "address": "123 Street, City"
-}
-```
+## many more end point like crud operation in student
+## many more end point like crud operation in couse
+## etc
 
-### Create a Student
-
-- **Endpoint:** `POST /students`
-- **Request Body:**
-```json
-{
- "name": "John Doe",
- "email": "johndoe@example.com",
- "course": "Computer Science",
- "mobileNumber": "1234567890",
- "address": "123 Street, City"
-}
-```
-
-### Create a Student
-
-- **Endpoint:** `POST /students`
-- **Request Body:**
-```json
-{
- "name": "John Doe",
- "email": "johndoe@example.com",
- "course": "Computer Science",
- "mobileNumber": "1234567890",
- "address": "123 Street, City"
-}
-```
-
-### Create a Student
-
-- **Endpoint:** `POST /students`
-- **Request Body:**
-```json
-{
- "name": "John Doe",
- "email": "johndoe@example.com",
- "course": "Computer Science",
- "mobileNumber": "1234567890",
- "address": "123 Street, City"
-}
 ```
 
 
