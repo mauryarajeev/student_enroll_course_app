@@ -25,7 +25,7 @@ A simple API built with Node.js, Express, and MongoDB to manage students, course
 }
 ```
 
-### Create a Student
+### Create a Course
 
 - **Endpoint:** `POST /courses`
 - **Request Body:**
