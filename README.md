@@ -279,7 +279,7 @@ A simple API built with Node.js, Express, and MongoDB to manage students, course
 ]
 ```
 
-### Create a Student
+### many more end point
 
 ## many more end point like crud operation in student
 ## many more end point like crud operation in couse
