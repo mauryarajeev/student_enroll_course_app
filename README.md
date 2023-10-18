@@ -23,6 +23,7 @@ A simple API built with Node.js, Express, and MongoDB to manage students, course
  "mobileNumber": "1234567890",
  "address": "123 Street, City"
 }
+```
 
 
 
